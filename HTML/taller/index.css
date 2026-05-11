@@ -22,3 +22,7 @@ h2 {
 ul {
     column-count: 2;
 }
+
+.links a {
+    color: red;
+}
