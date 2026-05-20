@@ -29,7 +29,7 @@ body {
     margin: 0;
 }
 
-.main_container {
+.main-container {
     display: block;
     width: 80%;
     max-width: 900px;
@@ -37,4 +37,46 @@ body {
     background-color: white;
     padding: 30px;
     border: 2px solid #ddd;
+}
+
+.important-text {
+  display: inline; /* Elemento desplegado en línea */
+  color: rgb(113, 222, 230);
+  font-weight: 700;
+}
+
+.code-snippet {
+  font-family: monospace;
+  background-color: #2d2d22;
+  color: rgb(63, 10, 63);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.image-box {
+  display: inline-block; /* Elemento desplegado en bloque en línea */
+  width: 150px;
+  height: 150px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJo4fOhtLmpP1ymyWvofL-keOebsImqixYBg&s');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajusta la imagen al tamaño del contenedor sin recortarla */
+  border: 2px solid rgb(201, 10, 10);
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.overflow-container {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid rgb(11, 148, 96);
+  overflow: auto; /* Agrega barras de desplazamiento si el contenido excede el tamaño del contenedor */
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.hidden-mensaje {
+    display: none;
 }
