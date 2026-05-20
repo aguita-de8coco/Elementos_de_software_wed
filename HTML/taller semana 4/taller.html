@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Práctico - HTML y CSS</title>
+  <link rel="stylesheet" href="taller.css">
+</head>
+<body>
+
+  <!-- Punto 1: Etiqueta <mark> -->
+  <section class="ejercicio">
+    <h2>1. Uso de la etiqueta &lt;mark&gt;</h2>
+    <p><mark>sirve para resaltar o marcar un fragmento de texto</mark> con fines de referencia, 
+    anotación o importancia.<mark>Su función es equivalente a pasar un marcador fluorescente sobre un libro</mark>,
+    enfocando la atención del lector en palabras clave o secciones relevantes</p>
+    <h2><mark>¿Para que sirve?</mark></h2>
+    <ul>
+        <li><strong>Destacar palabras clave:</strong> Resalta términos importantes dentro de un párrafo largo.</li>
+        <li><strong>Resultados de búsqueda:</strong> Es muy utilizada por los navegadores para señalar las coincidencias cuando utilizas la función "Buscar en página" o en los resultados de búsqueda de un sitio web.</li>
+        <li><strong>Correcciones o ediciones:</strong> Sirve para indicar fragmentos nuevos, editados o que requieren atención en un documento</li>
+    </ul>
+
+    <h2><mark>¿Cómo funciona?</mark></h2>
+    <p>Funciona como un elemento en línea, lo que significa que puedes envolver una palabra o 
+    frase específica dentro de un bloque de texto sin romper la línea actual.</p>
+
+    <p>Por defecto, los navegadores web le aplican un fondo de color amarillo, 
+    pero puedes personalizar completamente su aspecto visual (cambiar el color de fondo, el tipo de letra, etc.) 
+    utilizando CSS con la propiedad background-color</p>
+
+  <!-- Punto 2: Displays -->
+  <section class="ejercicio">
+    <h2>2. Comportamiento de Displays (Prueba)</h2>
+    <!-- Puedes alternar las clases en el CSS (.caja-block, .caja-inline, etc.) para ver los cambios -->
+    <div class="caja caja-roja caja-block">Div 1</div>
+    <div class="caja caja-azul caja-block">Div 2</div>
+    <div class="caja caja-verde caja-block">Div 3</div>
+  </section>
+
+  <!-- Punto 3: Imagen en párrafo -->
+  <section class="ejercicio">
+    <h2>3. Imagen integrada en un párrafo</h2>
+    <p>
+        Esto es un texto de prueba para ver qué pasa cuando coloco una imagen en el medio. 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZW-EiERqj9bV5KFWh9uvmLvomrj8R7i1wg&s" alt="Prueba" style="width: 100px; height: 100px;"> 
+        Como puedes ver, el texto continúa justo después de donde termina la imagen en la misma línea.
+    </p>
+  </section>
+
+  <!-- Punto 4: Imagen entre párrafos -->
+  <section class="ejercicio">
+    <h2>4. Imagen ubicada entre dos párrafos</h2>
+    <p>Este es el primer párrafo de texto independiente.</p>
+    
+    <img src="https://i.pinimg.com/736x/db/d4/66/dbd466d8a2f28cfc21fd7fd084a2ed25.jpg" class="img-bloque" alt="Muestra 200x200">
+    
+    <p>Este es el segundo párrafo de texto.</p>
+  </section>
+
+  <!-- Punto 5: Ajustando imágenes (Modelo de Caja) -->
+  <section class="ejercicio">
+    <h2>5. Ajustando imágenes y modelo de caja</h2>
+    <div class="contenedor-caja">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJo4fOhtLmpP1ymyWvofL-keOebsImqixYBg&s" alt="Foto Interna">
+    </div>
+  </section>
+
+</body>
+</html>
