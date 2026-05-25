@@ -1,6 +1,6 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: antiquewhite;
+    background-color: rgb(123, 189, 1);
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 
 header {
     background-color:darkgreen;
-    color: white;
+    color: rgb(95, 28, 28);
     padding: 20px;
     text-align:center;
 }

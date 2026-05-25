@@ -1,85 +1,149 @@
-/* --- Estilos Generales de Maquetación --- */
+/* --- Efecto de desplazamiento suave --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Estilos Generales y Base --- */
 body {
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: rgba(172, 207, 15, 0.842); /* Tu color verde original */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+/* --- Cabecera (Header de la imagen) --- */
+.header-principal {
+    background-color: #005e12; /* Verde oscuro como tu imagen */
+    text-align: center;
+    padding: 30px 20px;
+    color: #ffffff;
+}
+
+.header-principal h1 {
+    color: #800000; /* Color vino/marrón del título principal */
+    font-size: 2.2rem;
+    margin: 0 0 10px 0;
+}
+
+.header-principal .subtitulo {
+    color: #a0522d; /* Color del subtítulo */
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* Menú gris oscuro horizontal */
+.menu-navegacion {
+    background-color: #333333;
+    padding: 12px 0;
+}
+
+.menu-navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.menu-navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* --- Contenedor tipo Tarjeta Blanca --- */
+.contenedor-principal {
+    max-width: 900px;
+    margin: 30px auto; /* Centra la tarjeta en la pantalla */
+    padding: 30px;
+}
+
+/* Cada punto del taller es una tarjeta blanca redondeada */
 .ejercicio {
-  margin-bottom: 40px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  color: #2c3e50;
-  font-size: 1.4rem;
+/* --- Estilos Específicos del Punto 1 (Estilo Imagen) --- */
+.titulo-seccion {
+    color: #2ea412; /* Verde del título "1. Etiquetas Semanticas" */
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.bloque-destacado {
+    border-left: 4px solid #5d2b90; /* Línea morada de la izquierda */
+    padding-left: 15px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.nota-accesibilidad {
+    background-color: #7fffd4; /* Fondo aguamarina de la nota */
+    padding: 12px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+/* Ajuste para listas */
+ul {
+    text-align: left;
+    padding-left: 20px;
 }
 
 /* --- Punto 2: Displays --- */
 .caja {
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  line-height: 100px; /* Centra el texto verticalmente */
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px auto; /* Centrado básico */
 }
 
 .caja-roja { background-color: #e74c3c; }
 .caja-azul { background-color: #3498db; }
 .caja-verde { background-color: #2ecc71; }
 
-/* Clases para alternar según el ejercicio (Activa una a la vez descomentándola) */
 .caja-block { display: block; }
 /* .caja-inline { display: inline; } */
 /* .caja-inline-block { display: inline-block; } */
 /* .caja-none { display: none; } */
 
-
 /* --- Punto 3: Imagen en párrafo --- */
 .img-en-linea {
-  width: 100px;
-  height: 100px;
-  vertical-align: middle; /* Alineación para que no rompa bruscamente la línea */
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
 }
-
 
 /* --- Punto 4: Imagen entre párrafos --- */
 .img-bloque {
-  width: 200px;
-  height: 200px;
-  display: block; 
-  margin: 15px 0; /* Separa la imagen de los párrafos superior e inferior */
+    width: 200px;
+    height: 200px;
+    display: block; 
+    margin: 15px auto; /* Centrada */
 }
 
-
-/* --- Punto 5: Ajustando imágenes --- */
+/* --- Punto 5: Ajustando imágenes (Modelo de caja) --- */
 .contenedor-caja {
-  width:100px;
-  height: 100px;
-  background-color: #f1c40f;
-  
-  /* a. Padding de 10px */
-  padding: 10px;
-  
-  /* b. Borde de 5px */
-  border: 5px solid #2c3e50;
-  
-  /* c. Cambiar el modelo de caja a border-box */
-  box-sizing: border-box;
-  
-  /* d. Centrar la caja horizontalmente usando auto */
-  margin-left: auto;
-  margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #f1c40f;
+    padding: 10px;
+    border: 5px solid #2c3e50;
+    box-sizing: border-box; /* Evita que la caja crezca más de 100px */
+    margin: 0 auto; /* Centrado horizontal */
 }
 
-/* Asegura que la imagen llene el espacio interno disponible del div */
 .contenedor-caja img {
-  width: 100%;
-  height: 100%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
